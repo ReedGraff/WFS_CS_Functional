@@ -10,7 +10,7 @@ import matplotlib
 class Spam_Detection:
     def Side_By_Side():
         # Compile csv data into dataframe
-        df = pd.read_csv("Dataset/whole.csv")
+        df = pd.read_csv("../datasets/instagram_spam/whole.csv")
 
         for column in list(df):
             print("Testing: " + column)
@@ -72,8 +72,8 @@ class Spam_Detection:
         print(df)
 
     def import_data():
-        orig_train = pd.read_csv('Dataset/train.csv')
-        orig_test = pd.read_csv('Dataset/test.csv')
+        orig_train = pd.read_csv('../datasets/instagram_spam/train.csv')
+        orig_test = pd.read_csv('../datasets/instagram_spam/test.csv')
 
         # Training
         x_train = orig_train
