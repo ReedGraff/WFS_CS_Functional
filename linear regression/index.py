@@ -47,6 +47,14 @@ class Spam_Detection:
             column = column.translate({ord(i): None for i in '!@#$%^&*(){}[],./ ;:\'\"#'})
             plt.savefig("Visualizations/Visualization_of_" + column + ".png")
 
+
+
+
+
+
+
+
+
     def Multiple_Linear_Regression():
         # Reference => https://www.analyticsvidhya.com/blog/2021/05/multiple-linear-regression-using-python-and-scikit-learn/
         from sklearn.linear_model import LinearRegression
@@ -70,6 +78,30 @@ class Spam_Detection:
         result = df["Actual"].eq(df["Predicted"]).sum() / len(df) * 100
         print(result)
         print(df)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     def import_data():
         orig_train = pd.read_csv('../datasets/instagram_spam/train.csv')
