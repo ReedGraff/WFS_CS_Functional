@@ -1,0 +1,57 @@
+body {
+    background-color: grey;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav > * {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#grid_layout {
+    height: content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content:space-around;
+    place-items: center;
+    grid-gap: 5%;
+}
+
+#grid_layout > * {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px  black;
+}
+
+#grid_layout > div > p {
+    padding: 10px;
+}
+
+.example_image {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/Banana_1.jfif");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: center;
+
+    border-radius: 10px
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    #grid_layout {
+        grid-template-columns: 1fr;
+    }
+}
