@@ -12,7 +12,7 @@ class Triangles(object):
   
     def setName(self, name):
         self.name = name
-  
+    
     def setdim(self, s1, s2, s3):
         self.s1 = s1
         self.s2 = s2
